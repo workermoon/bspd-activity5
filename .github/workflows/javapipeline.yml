@@ -25,7 +25,8 @@ jobs:
 
         - name: build jar file
           run: |
-            chmod +x mvnw ./mvnw clean package
+            chmod +x ./mvnw
+            ./mvnw clean package
         
         - name: log in to docker hub
           uses: docker/login-action@v2
